@@ -2,30 +2,27 @@
 
 namespace CSharpCompiler.Demos.Finally
 {
-    class Program
+    public class AzureResourceProvider : IDisposable
     {
-        static void Main(string[] args)
-        {
-            ProvisionAzureResourcesForALotOfMoney();
-
-            try
-            {
-                DoStuff();
-            } 
-            finally
-            {
-                DeprovisionAzureResources();
-            }
-        }
-
-        static void ProvisionAzureResourcesForALotOfMoney()
+        public void ProvisionAzureResourcesForALotOfMoney()
         {
             Console.WriteLine("Provisioned resources costing 10 000$ per minute.");
         }
 
-        static void DeprovisionAzureResources()
+        public void Dispose()
         {
             Console.WriteLine("Deprovisioned Azure resources. Saved you money.");
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            using (var azureResourceProvider = new AzureResourceProvider())
+            {
+                DoStuff();
+            }
         }
 
         static void DoStuff()
