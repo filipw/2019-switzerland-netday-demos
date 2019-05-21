@@ -29,11 +29,11 @@ namespace CSharpCompiler.Demos.OpenGeneric
             Console.WriteLine(o);
             Console.WriteLine(o.GetType());
             Console.WriteLine(o.GetType().IsGenericTypeDefinition);
+            Console.ReadKey();
             Console.WriteLine(Activator.CreateInstance(o.GetType()));
 
             Console.WriteLine();
-            Console.WriteLine();
-            Console.ReadKey();
+            Console.ReadLine();
         }
     }
 

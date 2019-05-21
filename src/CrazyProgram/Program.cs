@@ -15,11 +15,11 @@ namespace CrazyProgram
             Console.WriteLine($"Square with a side of 4 has an area of {area}");
 
             #region moar
-            //double* ptr;
-            //ptr = &area;
+            double* ptr;
+            ptr = &area;
 
-            //// displaying value of area using pointer 
-            //Console.WriteLine("The value of area using a pointer is " + *ptr);
+            // displaying value of area using pointer 
+            Console.WriteLine("The value of area using a pointer is " + *ptr);
             #endregion
         }
     }

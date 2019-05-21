@@ -10,13 +10,16 @@ namespace CSharpCompiler.Demos.NoConstructor
             var dog = new Dog("Minnie");
             dog.Bark();
 
-            #region weird
-            //var dog2 = (Dog)FormatterServices.GetUninitializedObject(typeof(Dog));
-            //dog2.Bark();
-            #endregion
-
             Console.ReadLine();
         }
+
+        #region weird
+        static Dog CreateWeirdDog()
+        {
+            return (Dog)FormatterServices.GetUninitializedObject(typeof(Dog));
+        }
+        #endregion
+
     }
 
     class Dog
@@ -25,7 +28,7 @@ namespace CSharpCompiler.Demos.NoConstructor
 
         public Dog(string name)
         {
-            _name = name;
+            _name = name ?? throw new ArgumentNullException(nameof(name));
         }
 
         public void Bark()
