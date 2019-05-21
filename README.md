@@ -1,1 +1,1 @@
-# flashcon-2018-demos
+# .NET Day Switzerland 2019 Demos

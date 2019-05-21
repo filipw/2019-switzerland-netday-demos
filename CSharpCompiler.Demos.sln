@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2000
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpCompiler.Demos.InvalidProgram", "src\CSharpCompiler.Demos.InvalidProgram\CSharpCompiler.Demos.InvalidProgram.csproj", "{8582DC2B-998B-41F3-8ECA-093656E8EAEB}"
 EndProject
@@ -9,13 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpCompiler.Demos.OpenGe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpCompiler.Demos.MemberOverrides", "src\CSharpCompiler.Demos.MemberOverrides\CSharpCompiler.Demos.MemberOverrides.csproj", "{A0BD582A-5CBA-4C40-B7BA-DAAD7A63C939}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gift", "src\Gift\Gift.csproj", "{0DFED68F-299D-4CF1-BDA1-C4A827F17BB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Animal", "src\Animal\Animal.csproj", "{0DFED68F-299D-4CF1-BDA1-C4A827F17BB0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChristmasGift", "src\ChristmasGift\ChristmasGift.csproj", "{4E957563-A5D7-4283-9792-C560150B8378}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dog", "src\Dog\Dog.csproj", "{4E957563-A5D7-4283-9792-C560150B8378}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToyGift", "src\ToyGift\ToyGift.csproj", "{2F314AC5-A39E-4015-AB04-2D3DEE431B61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Westie", "src\Westie\Westie.csproj", "{2F314AC5-A39E-4015-AB04-2D3DEE431B61}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gifts", "Gifts", "{B6AE5194-335F-475B-BDA1-916EBFAABB7F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dogs", "Dogs", "{B6AE5194-335F-475B-BDA1-916EBFAABB7F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VisibilityChecks", "VisibilityChecks", "{367803EE-2857-448A-B630-09E788C46D69}"
 EndProject
@@ -25,9 +25,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Compiler", "src\Compiler\Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrazyProgram", "src\CrazyProgram\CrazyProgram.csproj", "{8BCFAB39-0039-4B9E-B6EC-52226FC55650}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpCompiler.Demos.Lowering", "src\CSharpCompiler.Demos.Lowering\CSharpCompiler.Demos.Lowering.csproj", "{661D7F45-7B2F-4EB2-B52E-D602B3233D48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpCompiler.Demos.Lowering", "src\CSharpCompiler.Demos.Lowering\CSharpCompiler.Demos.Lowering.csproj", "{661D7F45-7B2F-4EB2-B52E-D602B3233D48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpCompiler.Demos.StaticReturn", "src\CSharpCompiler.Demos.StaticReturn\CSharpCompiler.Demos.StaticReturn.csproj", "{F1BFD038-8CAC-4C84-9825-DD984BF515E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpCompiler.Demos.NoConstructor", "src\CSharpCompiler.Demos.NoConstructor\CSharpCompiler.Demos.NoConstructor.csproj", "{188A2552-DDED-429D-9FCF-2B2F446908F6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpCompiler.Demos.EvilString", "src\CSharpCompiler.Demos.EvilString\CSharpCompiler.Demos.EvilString.csproj", "{FF7FDD74-A9CD-4BDA-A98E-AF04AC4F0EE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpCompiler.Demos.Polyfill", "src\CSharpCompiler.Demos.Polyfill\CSharpCompiler.Demos.Polyfill.csproj", "{B80EE025-99F7-4897-AA79-3FEA12E6022E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,10 +79,18 @@ Global
 		{661D7F45-7B2F-4EB2-B52E-D602B3233D48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{661D7F45-7B2F-4EB2-B52E-D602B3233D48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{661D7F45-7B2F-4EB2-B52E-D602B3233D48}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F1BFD038-8CAC-4C84-9825-DD984BF515E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F1BFD038-8CAC-4C84-9825-DD984BF515E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F1BFD038-8CAC-4C84-9825-DD984BF515E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F1BFD038-8CAC-4C84-9825-DD984BF515E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{188A2552-DDED-429D-9FCF-2B2F446908F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{188A2552-DDED-429D-9FCF-2B2F446908F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{188A2552-DDED-429D-9FCF-2B2F446908F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{188A2552-DDED-429D-9FCF-2B2F446908F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF7FDD74-A9CD-4BDA-A98E-AF04AC4F0EE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF7FDD74-A9CD-4BDA-A98E-AF04AC4F0EE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF7FDD74-A9CD-4BDA-A98E-AF04AC4F0EE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF7FDD74-A9CD-4BDA-A98E-AF04AC4F0EE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B80EE025-99F7-4897-AA79-3FEA12E6022E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B80EE025-99F7-4897-AA79-3FEA12E6022E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B80EE025-99F7-4897-AA79-3FEA12E6022E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B80EE025-99F7-4897-AA79-3FEA12E6022E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

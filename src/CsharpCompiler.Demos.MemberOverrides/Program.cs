@@ -1,4 +1,4 @@
-﻿using Articles;
+﻿using Example;
 using System;
 
 namespace CsharpCompiler.Demos.MemberOverrides
@@ -7,8 +7,8 @@ namespace CsharpCompiler.Demos.MemberOverrides
     {
         static void Main(string[] args)
         {
-            var gift = new ToyGift();
-            Console.WriteLine(gift.GetDescription());
+            var westie = new Westie();
+            Console.WriteLine(westie.GetDescription());
         }
     }
 }

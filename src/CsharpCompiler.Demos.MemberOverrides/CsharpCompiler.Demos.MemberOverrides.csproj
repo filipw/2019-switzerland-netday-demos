@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -6,9 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ChristmasGift\ChristmasGift.csproj" />
-    <ProjectReference Include="..\Gift\Gift.csproj" />
-    <ProjectReference Include="..\ToyGift\ToyGift.csproj" />
+    <ProjectReference Include="..\Dog\Dog.csproj" />
+    <ProjectReference Include="..\Animal\Animal.csproj" />
+    <ProjectReference Include="..\Westie\Westie.csproj" />
   </ItemGroup>
 
 </Project>
