@@ -15,6 +15,7 @@ namespace CSharpCompiler.Demos.OpenGeneric
             var green = Gift<int>.Color.Green;
             //var green2 = Gift<>.Color.Green;
 
+            #region different
             var normal = Enum.ToObject(typeof(Gift.Color), 0);
             var normalTyped = Enum.ToObject(typeof(Gift<int>.Color), 0);
             var weird = Enum.ToObject(typeof(Gift<>.Color), 0);
@@ -22,6 +23,7 @@ namespace CSharpCompiler.Demos.OpenGeneric
             Inspect(normal);
             Inspect(normalTyped);
             Inspect(weird);
+            #endregion
         }
 
         private static void Inspect(object o)

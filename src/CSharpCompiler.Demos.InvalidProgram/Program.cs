@@ -10,11 +10,8 @@ namespace CSharpCompiler.Demos.InvalidProgram
     }
 
 
-    // legal type topology in C#
-    // type definition is recursive but the struct layout is not - the field is static
     struct Leaf
     {
-        //public Leaf? Foo;
-        public static Leaf? Foo;
+        public Leaf? Foo;
     }
 }

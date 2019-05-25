@@ -21,6 +21,7 @@ namespace CSharpCompiler.Demos.Finally
         {
             using (var azureResourceProvider = new AzureResourceProvider())
             {
+                azureResourceProvider.ProvisionAzureResourcesForALotOfMoney();
                 DoStuff();
             }
         }

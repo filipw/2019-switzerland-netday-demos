@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 using System.Runtime.Serialization;
 
 namespace CSharpCompiler.Demos.NoConstructor
@@ -16,7 +17,7 @@ namespace CSharpCompiler.Demos.NoConstructor
         #region weird
         static Dog CreateWeirdDog()
         {
-            return (Dog)FormatterServices.GetUninitializedObject(typeof(Dog));
+            return (Dog)RuntimeHelpers.GetUninitializedObject(typeof(Dog));
         }
         #endregion
 
