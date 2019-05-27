@@ -29,7 +29,12 @@ namespace CSharpCompiler.Demos.NoConstructor
 
         public Dog(string name)
         {
-            _name = name ?? throw new ArgumentNullException(nameof(name));
+            if (string.IsNullOrEmpty(name))
+            {
+                throw new ArgumentException("Dog needs a name, you stupid developer", nameof(name));
+            }
+
+            _name = name;
         }
 
         public void Bark()
